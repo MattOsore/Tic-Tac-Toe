@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.media.mantiki.tictactoe.MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/colour_swirl" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/dlxfont"
+            android:padding="20dp"
+            android:shadowColor="@color/shadowColor"
+            android:text="Tic"
+            android:textAllCaps="true"
+            android:textColor="#FAFAFA"
+            android:textSize="76sp"
+            tools:ignore="HardcodedText"
+            tools:targetApi="jelly_bean" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/dlxfont"
+            android:padding="20dp"
+            android:text="Tac"
+            android:textAllCaps="true"
+            android:textColor="#FAFAFA"
+            android:textSize="76sp"
+            tools:ignore="HardcodedText"
+            tools:targetApi="jelly_bean" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/dlxfont"
+            android:padding="20dp"
+            android:text="Toe"
+            android:textAllCaps="true"
+            android:textColor="#FAFAFA"
+            android:textSize="76sp"
+            tools:ignore="HardcodedText"
+            tools:targetApi="jelly_bean" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/button_selector"
+        android:text="Let's Begin!!"
+        android:theme="@style/AppTheme.Button"
+        tools:ignore="HardcodedText" />
+
+
+
+</RelativeLayout>
